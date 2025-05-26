@@ -1,10 +1,6 @@
 {
+  "platform": "python",
   "app": "amirsoleymanpour",
-  "port": 3000,
-  "build": {
-    "command": "pip install -r myproject/requirements.txt"
-  },
-  "run": {
-    "command": "gunicorn myproject.wsgi --bind 0.0.0.0:3000"
-  }
+  "port": 8000,
+  "root": "zakhire/myproject"
 }
