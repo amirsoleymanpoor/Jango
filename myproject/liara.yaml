@@ -1,8 +1,7 @@
-app: amirsoleymanpour
-platform: python
-
-static: static
-
-build:
-  commands:
-    - python3 manage.py collectstatic --noinput
+app: amirsoleymanpourborujeni
+type: python
+python:
+  version: "3.10"  # نسخه پایتون، اگر لازم بود تغییر بده
+deploy:
+  command: "python manage.py migrate && python manage.py collectstatic --noinput"
+  port: 8000

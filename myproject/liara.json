@@ -1,0 +1,7 @@
+{
+  "platform": "python",
+  "pythonVersion": "3.10",
+  "django": {
+    "settingsFile": "settings.py"
+  }
+}
