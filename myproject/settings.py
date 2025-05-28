@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-dxwh5mqmqgjgky__smnfozf*0p#4oqj4p@@!l&65*2frb64u4f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*'] # IMPORTANT: Replace '*' with your actual domain name(s) on Liara for production
+ALLOWED_HOSTS = ['*'] # IMPORTANT: Replace '*' with your actual domain name(s) on your hosting platform for production
 
 
 # Application definition
@@ -115,8 +115,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = '/static/' # Use absolute path for STATIC_URL
-STATICFILES_DIRS = [] # Leave this empty or specify additional static file directories
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [] # Set this to an empty list or specify development-specific static directories if needed
 STATIC_ROOT = BASE_DIR / 'staticfiles' # Directory for collected static files in production
 
 # Default primary key field type
