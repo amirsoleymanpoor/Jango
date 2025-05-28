@@ -1,0 +1,8 @@
+app: amirsoleymanpour
+platform: python
+
+static: static
+
+build:
+  commands:
+    - python3 manage.py collectstatic --noinput

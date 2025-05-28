@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)1j6w+zgyriskb_bdq(np7!h5qlmb6721xiocj*^p#27g&a*=x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.liara.run', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -118,10 +118,10 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'core/static',
+    BASE_DIR / 'staticfiles',
 ]
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
