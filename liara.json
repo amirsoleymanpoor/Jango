@@ -1,6 +1,10 @@
-{
-  "platform": "python",
-  "app": "amirsoleymanpour",
-  "port": 8000,
-  "root": "zakhire/myproject"
-}
+    {
+      "platform": "django",
+      "platformConfig": {
+        "version": "3.11"
+      },
+      "django": {
+        "settingsFile": "myproject.settings",
+        "collectStatic": true
+      }
+    }
